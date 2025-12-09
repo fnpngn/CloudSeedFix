@@ -63,7 +63,7 @@ namespace CloudSeed
 			devInfo.EditorWidth = 995;
 			devInfo.EditorHeight = 386;
 			devInfo.HasEditor = true;
-			devInfo.Name = "CloudSeed Algorithmic Reverb";
+			devInfo.Name = "CloudSeed Algorithmic Reverb (Fix)";
 			devInfo.ProgramCount = 1;
 			devInfo.Type = DeviceType.Effect;
 			devInfo.Version = 1501;
