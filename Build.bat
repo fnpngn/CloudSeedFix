@@ -14,6 +14,8 @@ xcopy CloudSeed\bin\Release\*.dll Builds\Current\CloudSeed\ /s /e /h
 cd Builds\Current
 ..\..\Binaries\SharpSoundDevice\x64\Release\BridgeGenerator.exe CloudSeed\CloudSeed.dll CloudSeed.dll
 
+rename CloudSeed.dll CloudSeedFix.dll
+
 :: Copy In Factory Presets
 xcopy "..\..\Factory Programs" "CloudSeed\Programs\Factory Programs\" /s /e /h
 
