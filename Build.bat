@@ -23,3 +23,5 @@ del ..\CloudSeed-%ts%-NoInstall.zip
 7z a ..\CloudSeed-%ts%-NoInstall.zip -r *.*
 cd..
 cd..
+
+explorer .\Builds\Current
