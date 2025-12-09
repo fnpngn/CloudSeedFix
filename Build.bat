@@ -1,5 +1,5 @@
 rd /S /Q Builds\Current
-set ts=%DATE:~6,4%-%DATE:~3,2%-%DATE:~0,2%
+for /f %%i in ('powershell -NoLogo -NoProfile -Command "(Get-Date).ToString(\"yyyy-MM-dd\")"') do set ts=%%i
 
 :: Build 64 Bit
 rd /S /Q Builds\Current
