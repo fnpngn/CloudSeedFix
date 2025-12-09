@@ -49,11 +49,11 @@ namespace CloudSeed
 		public void InitializeDevice()
 		{
 #if DEBUG
-			devInfo.DeviceID = "Low Profile - CloudSeed - DEV";
+			devInfo.DeviceID = "Low Profile - CloudSeedFix - DEV";
 #else
-			devInfo.DeviceID = "Low Profile - CloudSeed";
-# endif
-			if (!Environment.Is64BitOperatingSystem)
+			devInfo.DeviceID = "Low Profile - CloudSeedFix";
+#endif
+            if (!Environment.Is64BitOperatingSystem)
 			{
 				// solves possible conflict when both 32 and 64 bit plugins are available in Reaper
 				devInfo.DeviceID = DeviceInfo.DeviceID + " x86";
@@ -63,7 +63,7 @@ namespace CloudSeed
 			devInfo.EditorWidth = 995;
 			devInfo.EditorHeight = 386;
 			devInfo.HasEditor = true;
-			devInfo.Name = "CloudSeed Algorithmic Reverb (Fix)";
+			devInfo.Name = "CloudSeed Algorithmic Reverb Fix";
 			devInfo.ProgramCount = 1;
 			devInfo.Type = DeviceType.Effect;
 			devInfo.Version = 1501;
