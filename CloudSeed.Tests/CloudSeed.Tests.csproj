@@ -131,7 +131,7 @@
     <Compile Include="UnsafeReverbTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AudioLib\AudioLib\AudioLib.csproj">
+    <ProjectReference Include="..\AudioLib\AudioLib\AudioLib.csproj">
       <Project>{4905489d-6f81-4129-8780-744ced5b3269}</Project>
       <Name>AudioLib</Name>
     </ProjectReference>
