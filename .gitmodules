@@ -1,3 +1,4 @@
 [submodule "AudioLib"]
 	path = AudioLib
-	url = https://github.com/ValdemarOrn/AudioLib.git
+	url = https://github.com/fnpngn/AudioLibFix.git
+	
