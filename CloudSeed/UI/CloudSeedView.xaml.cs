@@ -87,8 +87,20 @@ namespace CloudSeed.UI
 			Setup();
 		}
 
-		void Setup()
+        void OnLoaded(object sender, RoutedEventArgs e)
+        {
+            var source = PresentationSource.FromVisual(this);
+            if (source?.CompositionTarget == null) return;
+
+            double dpiX = 96.0 * source.CompositionTarget.TransformToDevice.M11;
+            double scale = dpiX / 96.0;
+
+            this.MainGrid.LayoutTransform = new ScaleTransform(1 / scale, 1 / scale);
+        }
+
+        void Setup()
 		{
+            Loaded += OnLoaded;
 			var linkedControls = ParameterControl.GetChildrenWithValue(this);
 
 			foreach (var linkedControl in linkedControls)
